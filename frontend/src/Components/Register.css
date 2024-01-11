@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+body {
+    margin: 40px;
+    justify-content: center;
+    background: black;
+    background: linear-gradient(to right, black, black);
+    
+  }
+  .image{
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  .para1{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: Papyrus, fantasy;
+  
+  }
+  .card{
+    width:500px;
+  }
+  .container{
+    flex: 0.7;
+  }
