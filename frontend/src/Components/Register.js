@@ -20,7 +20,7 @@ function Register(){
  const handleSubmit=(e)=>{
 e.preventDefault()
    console.log("submitting form")
-   axios.post("http://localhost:8080/registerUser",{Name,Email,Password,confirmPassword})
+   axios.post("https://chat-application-r22z.onrender.com/registerUser",{Name,Email,Password,confirmPassword})
    .then((res)=>{
      console.log(res)
      sessionStorage.setItem("userData", JSON.stringify(res)); // Fix typo here

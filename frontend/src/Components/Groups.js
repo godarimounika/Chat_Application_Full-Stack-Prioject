@@ -204,7 +204,7 @@ function Groups() {
     };
 
     axios
-      .get("http://localhost:8080/chat/fetchGroups", config)
+      .get("https://chat-application-r22z.onrender.com/chat/fetchGroups", config)
       .then((response) => {
         // console.log("Group Data from API ", response.data);
         SetGroups(response.data);
@@ -264,7 +264,7 @@ function Groups() {
                       Authorization:`Bearer ${userData.data.token}`,
                     },
                   };
-                  axios.put("http://localhost:8080/chat/addSelfToGroup",
+                  axios.put("https://chat-application-r22z.onrender.com/chat/addSelfToGroup",
                   {
                     chatId :group._id,
                     userId:userData.data._id,

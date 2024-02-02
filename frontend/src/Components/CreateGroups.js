@@ -62,7 +62,7 @@ function CreateGroups() {
         selectedUserIds.push(user._id);
         axios.
         post(
-          "http://localhost:8080/chat/create-groups",
+          "https://chat-application-r22z.onrender.com/chat/create-groups",
           {
             // name: groupName,
             // users:user

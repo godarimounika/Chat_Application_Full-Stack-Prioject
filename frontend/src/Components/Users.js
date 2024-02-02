@@ -55,7 +55,7 @@ useEffect(() => {
         Authorization: `Bearer ${userData.data.token}`,
       },
     };
-    axios.get("http://localhost:8080/user/fetchUsers", config).then((data) => {
+    axios.get("https://chat-application-r22z.onrender.com/user/fetchUsers", config).then((data) => {
       console.log("UData refreshed in Users panel ",data);
       setUsers(data.data);
       // setRefresh(!refresh);
@@ -109,7 +109,7 @@ duration:"0.3"}}
                                 Authorization:`Bearer ${userData.data.token}`,
                             },
                         };
-                        axios.post("http://localhost:8080/chat/",
+                        axios.post("https://chat-application-r22z.onrender.com/chat/",
                         {
                             userId:user._id,
                         },

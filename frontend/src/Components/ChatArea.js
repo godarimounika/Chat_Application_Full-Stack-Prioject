@@ -13,7 +13,7 @@ import axios from "axios";
 import  {myContext}  from "./MainContainer";
 import {io} from "socket.io-client";
 
-const ENDPOINT = "http://localhost:8080";
+const ENDPOINT = "https://chat-application-r22z.onrender.com";
 
 var socket,chat;
 
@@ -42,7 +42,7 @@ const[allMessagesCopy,setAllMessagesCopy]=useState([])
     };
     axios
       .post(
-        "http://localhost:8080/message/",
+        "https://chat-application-r22z.onrender.com/message/",
         {
           content: messageContent,
           chatId: chat_id,
@@ -88,7 +88,7 @@ const[allMessagesCopy,setAllMessagesCopy]=useState([])
       },
     };
     axios
-      .get("http://localhost:8080/message/" + chat_id, config)
+      .get("https://chat-application-r22z.onrender.com/message/" + chat_id, config)
       .then(({ data }) => {
         setAllMessages(data);
         setloaded(true);

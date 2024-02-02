@@ -45,7 +45,7 @@ useEffect(()=>{
         },
     };
 
-    axios.get("http://localhost:8080/chat/",config).then((response)=>{
+    axios.get("https://chat-application-r22z.onrender.com/chat/",config).then((response)=>{
         setConversations(response.data);
     })
 },[conversations])
