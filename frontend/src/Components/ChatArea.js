@@ -77,7 +77,7 @@ const[allMessagesCopy,setAllMessagesCopy]=useState([])
       setAllMessages([...allMessages],newMessage);
     }
   })
- })
+ },[allMessagesCopy]);
 
 
   useEffect(() => {
@@ -95,6 +95,8 @@ const[allMessagesCopy,setAllMessagesCopy]=useState([])
       socket.emit("join chat", chat_id);
 
 
+      }).catch((error)=>{
+        console.error("AxiosError",error)
       });
     setAllMessagesCopy(allMessages);
   }, [refresh, chat_id,userData.data.token]);

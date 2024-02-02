@@ -47,7 +47,7 @@ return (
         <p className={"con-lastMessage" + (lightTheme ? "" : " dark")}>
           {props.content}
         </p>
-        {/* <p className="self-timeStamp">12:00am</p> */}
+        {/* <p className="self-timeStamp">{props.timestamp}</p> */}
       </div>
     </div>
   </div>

@@ -27,6 +27,7 @@ const sendMessage = expressAsyncHandler(async (req, res) => {
   var newMessage = {
     sender: req.user._id,
     content: content,
+    // timestamp:timestamp,
     chat: chatId,
   };
 
