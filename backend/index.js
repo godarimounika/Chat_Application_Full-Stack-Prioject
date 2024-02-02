@@ -17,7 +17,7 @@ app.use( express.json() );
 app.use(userRoutes);
 
 
-mongoose.connect("mongodb+srv://Mounika:mounu96181@cluster1.80jappe.mongodb.net/?retryWrites=true&w=majority" )
+mongoose.connect("mongodb+srv://Mounika:Mounika@cluster1.80jappe.mongodb.net/?retryWrites=true&w=majority" )
 .then( () => { 
     
     console.log(`DB Connected`) } )
